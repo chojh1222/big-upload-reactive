@@ -159,6 +159,11 @@ public class UploadController {
             .header("Access-Control-Allow-Methods", "GET,PUT,PATCH,POST,DELETE")
             .build());
     }
+    
+    @RequestMapping("/test")
+    public String test() {
+    	return "123";
+    }
 
 
 }
